@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <script src = "js/Name.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAyhy32IcpbHYp1zCYBq_mVAroEI8-HUhY",
+    authDomain: "my-sample-project-d6e2a.firebaseapp.com",
+    databaseURL: "https://my-sample-project-d6e2a.firebaseio.com",
+    projectId: "my-sample-project-d6e2a",
+    storageBucket: "my-sample-project-d6e2a.appspot.com",
+    messagingSenderId: "151767750708",
+    appId: "1:151767750708:web:b5a70ecc6bc3fda8cfd261"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="sketch.js"></script>
+      <div id = "canvascontainer"></div>
+
+      <p>
+        <button id = "saveButton">Save</button>
+        <button id = "clearButton">Clear</button>
+        <div id = "Name">Name</div>
+        <input id = "nameInput"></input>
+
+        <ol id = "drawinglist"></ol>
+      </p>
+
+      <!-- <p>Press Y to make the stroke Yellow</p> -->
+        <h5>Press Y to make the stroke Yellow, R to make it Red, G to make it Green, B to make it Blue, W to make it White, U to make it Purple, P to make it Pink, O to make it Orange, L to make it Black</h5>
+        
+</body></html>
